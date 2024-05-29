@@ -7,7 +7,6 @@
 
 function celcius(temperature){
     const fahrenheit = 0.4285714285714286;
-    return parseInt(Math.fround( temperature * fahrenheit)) ;
+    return console.log( "Fahrenheit to Celcius = " + parseInt(Math.fround( temperature * fahrenheit))+ "°C" );
 }
-
-console.log( "Fahrenheit to Celcius = " + celcius(140) + "°C" );
+celcius(140);
