@@ -3,3 +3,13 @@
  * @param {number} num The number to check.
  * @throws {Error} If the number is not a positive integer.
  */
+
+function isLower(num){
+    if ( num < 0 ){
+        console.log( `The number ${num} is not a positive integer` );
+    } else {
+        console.log( `The number ${num} is a positive number`)
+    }
+}
+
+isLower(-10);
