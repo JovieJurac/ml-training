@@ -8,11 +8,11 @@
 
 function numCheck(num) {
     if( num % 2 == 0 ){
-        return console.log( `The number ${num} is even.` );
+        return true;
     } else {
-        return console.log( `The number ${num} is odd.`);
+        return false;
     }
 }
 
-const oddNum = numCheck(3);
-const evenNum = numCheck(10);
+console.log(numCheck(3));
+console.log(numCheck(10));
