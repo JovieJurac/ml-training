@@ -7,8 +7,6 @@
  */
 
 function fizzBuzz(num){
-    // let checker = 1;
-
     for ( let checker = 1; checker <= num; checker++  ){
         if( checker % 3 == 0 && checker % 5 == 0 ){
             console.log("FizzBuzz");
@@ -22,4 +20,4 @@ function fizzBuzz(num){
     }
 }
 
-const num = fizzBuzz(30);
+fizzBuzz(30);
