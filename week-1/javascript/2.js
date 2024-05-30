@@ -5,14 +5,10 @@
  */
 
 function sumArray(...numbers){
-    console.log(numbers)
     let total = 0;
-
     for (const num of numbers){
-        console.log(num);
         total += num;
     }
-    return console.log(total);
+    return total;
 }
-
-const number = sumArray(1,2,3);
+console.log(sumArray(1,2,3));
