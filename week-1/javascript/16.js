@@ -15,22 +15,13 @@
  * @return {number} The average marks of the students.
  */
 
-// const students = [
-//   { name: "John", mark: 90 },
-//   { name: "Jane", mark: 85 },
-//   { name: "Joe", mark: 95 },
-//   { name: "Tom", mark: 65 },
-//   { name: "Nancy", mark: 75 },
-// ];
-
 const students = [
-  { name: "John", mark: 59 },
-  { name: "Jane", mark: 59 },
-  { name: "Joe", mark: 59},
-  { name: "Tom", mark: 59 },
-  { name: "Nancy", mark: 59 },
+  { name: "John", mark: 90 },
+  { name: "Jane", mark: 85 },
+  { name: "Joe", mark: 95 },
+  { name: "Tom", mark: 65 },
+  { name: "Nancy", mark: 75 },
 ];
-
 
 function average(grades) {
   let total = 0;
