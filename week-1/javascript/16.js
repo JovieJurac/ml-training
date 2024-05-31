@@ -15,13 +15,22 @@
  * @return {number} The average marks of the students.
  */
 
+// const students = [
+//   { name: "John", mark: 90 },
+//   { name: "Jane", mark: 85 },
+//   { name: "Joe", mark: 95 },
+//   { name: "Tom", mark: 65 },
+//   { name: "Nancy", mark: 75 },
+// ];
+
 const students = [
-  { name: "John", mark: 90 },
-  { name: "Jane", mark: 85 },
-  { name: "Joe", mark: 95 },
-  { name: "Tom", mark: 65 },
-  { name: "Nancy", mark: 75 },
+  { name: "John", mark: 59 },
+  { name: "Jane", mark: 59 },
+  { name: "Joe", mark: 59},
+  { name: "Tom", mark: 59 },
+  { name: "Nancy", mark: 59 },
 ];
+
 
 function average(grades) {
   let total = 0;
@@ -33,19 +42,19 @@ function average(grades) {
   total /= grades.length;
 
   switch (true){
-    case total > 90 : {
+    case total >= 90 : {
       grade = "A";
       break;
     }
-    case total > 80 : {
+    case total >= 80 : {
       grade = "B";
       break;
     }
-    case total > 70 : {
+    case total >= 70 : {
       grade = "C";
       break;
     }
-    case total > 60 : {
+    case total >= 60 : {
       grade = "D";
       break;
     }
