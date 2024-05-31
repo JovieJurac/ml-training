@@ -6,3 +6,15 @@
  * Example string: "The quick brown fox jumps over the lazy dog"
  * Expected output: "The Quick Brown Fox Jumps Over The Lazy Dog"
  */
+function changeHere(str) {
+  let changed = str
+    .split(" ")
+    .map(word => 
+        word.charAt(0).toUpperCase() + word.slice(1).   toLowerCase()
+)
+    .join(" ");
+
+  return console.log(changed);
+}
+
+changeHere("The quick brown fox jumps over the lazy dog");
