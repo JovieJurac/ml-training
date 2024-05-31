@@ -12,8 +12,8 @@ function checkInteger(num) {
       console.log(`The inputted value is ${num}`);
     }
   } catch (error) {
-    return error;
+    return console.log(error);
   }
 }
 
-console.log(checkInteger("a"));
+checkInteger(-2);
