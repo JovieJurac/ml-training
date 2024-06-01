@@ -4,3 +4,13 @@
  * @param {number} num2 The second number to check.
  * @throws {Error} If the second number is 0.
  */
+
+function isZero(num1:number, num2:number): void{
+    if (num2 == 0){
+        console.log( "The second value is equal to 0.");
+    } else {
+        console.log(` The 1st value is ${num1} and the 2nd value is ${num2}, respectively.`)
+    }
+}
+
+isZero(1,-2)
