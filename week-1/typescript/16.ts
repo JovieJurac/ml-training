@@ -15,10 +15,51 @@
  * @return {number} The average marks of the students.
  */
 
-const students = [
+interface Student {
+  name : String;
+  mark :number;
+}
+const students: Student[]= [
   { name: "John", mark: 90 },
   { name: "Jane", mark: 85 },
   { name: "Joe", mark: 95 },
   { name: "Tom", mark: 65 },
   { name: "Nancy", mark: 75 },
 ];
+
+function average(grades:Student[]):void {
+  let total:number = 0;
+  let grade:string = "";
+
+  for (let i:number = 0; i < grades.length; i++) {
+    total += students[i].mark;
+  }
+  total /= grades.length;
+
+  switch (true){
+    case total >= 90 : {
+      grade = "A";
+      break;
+    }
+    case total >= 80 : {
+      grade = "B";
+      break;
+    }
+    case total >= 70 : {
+      grade = "C";
+      break;
+    }
+    case total >= 60 : {
+      grade = "D";
+      break;
+    }
+    default : {
+      grade = "F";
+      break;  
+    }
+  }
+
+  return console.log(`Average: ${total} - ${grade}`);
+}
+
+average(students);
