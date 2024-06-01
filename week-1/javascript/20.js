@@ -7,3 +7,18 @@
  * @param {string} str
  * @returns {string}
  */
+
+function switcher(str) {
+  let switched = str
+    .split("")
+    .map((char) => {
+      return char === char.toUpperCase()
+        ? char.toLowerCase()
+        : char.toUpperCase();
+    })
+    .join("");
+
+  return console.log(switched);
+}
+
+switcher("Hello World!");
