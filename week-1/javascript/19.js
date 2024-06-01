@@ -9,3 +9,11 @@
  * @param {number[]} arr2
  * @returns {number[]}
  */
+
+function mergeArray(arr1, arr2){
+    const merged = [...arr1, ...arr2];
+    const uniqueMerged = [... new Set(merged)];
+    return console.log(uniqueMerged);
+}
+
+mergeArray([23,25,234,1,3,45,6,6],[5,1,53,23,5,3,1]);
