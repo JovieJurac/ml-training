@@ -19,3 +19,32 @@
  * @param {string} password
  * @returns {string}
  */
+
+
+function passwordCheck(password: string){
+    try{
+        switch(true){
+            case password.length < 8:{
+                throw ("Password must be at least 8 characters long.");
+            }
+            case !/[a-z]/.test(password) : {
+                throw ("Password must contain at least one lowercase letter.")
+            }
+            case !/[A-Z]/.test(password) : {
+                throw ("Password must contain at least one uppercase letter")
+            }
+            case !/[\d]/.test(password) : {
+                throw ("Password must contain at least one number");
+            }
+            case !/[^a-zA-Z0-9]/.test(password) : {
+                throw ("Password must contain at least one special character");
+            }
+            default : {
+                throw ("Password is valid");
+            }
+        }} catch (error){
+            return console.log(error);
+        }
+    }
+    
+    passwordCheck("AFD@FEFasEF5");
