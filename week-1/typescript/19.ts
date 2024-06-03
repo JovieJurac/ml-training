@@ -9,3 +9,11 @@
  * @param {number[]} arr2
  * @returns {number[]}
  */
+
+function mergeArray(arr1: number[], arr2: number[]):void{
+    const merged: number[] = [...arr1, ...arr2];
+    const uniqueMerged : number[] = [...new Set(merged)];
+    return console.log(uniqueMerged);
+}
+
+mergeArray([1,2,3,4],[2,3,4,5]);
