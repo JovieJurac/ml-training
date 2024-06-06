@@ -1,0 +1,3 @@
+[submodule "week-2/week-2/todo-list"]
+	path = week-2/week-2/todo-list
+	url = https://github.com/JovieJurac/ml-training.git
