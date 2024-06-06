@@ -5,10 +5,15 @@
  */
 
 function isLower(num){
-    if ( num < 0 ){
-        console.log( `The number ${num} is not a positive integer` );
-    } else {
-        console.log( `The number ${num} is a positive number`)
+    try {
+        
+        if ( num < 0 ){
+            throw `The number ${num} is not a positive integer` ;
+        } else {
+            throw `The number ${num} is a positive number`
+        }
+    } catch (error) {
+        return console.log(error);
     }
 }
 
