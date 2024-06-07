@@ -25,20 +25,20 @@ export class ContactService {
     }
   }
 
-  async findOne(id: number) {
+  async findOne(number: string) {
     try {
       return await this.prisma.contact.findUnique({
-        where: { id: id },
+        where: { number: number },
       });
     } catch (error) {
       return error.message;
     }
   }
 
-  async update(id: number, updateContactDto: UpdateContactDto) {
+  async update(number: string, updateContactDto: UpdateContactDto) {
     try {
       return await this.prisma.contact.update({
-        where: { id: id },
+        where: { number: number },
         data: updateContactDto,
       });
     } catch (error) {
@@ -46,10 +46,10 @@ export class ContactService {
     }
   }
 
-  async remove(id: number) {
+  async remove(number: string) {
     try {
       return await this.prisma.contact.delete({
-        where: { id: id },
+        where: { number: number },
       });
     } catch (error) {
       return error.message;

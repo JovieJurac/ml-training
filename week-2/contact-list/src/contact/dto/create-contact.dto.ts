@@ -1,6 +1,6 @@
 export class CreateContactDto {
   name: string;
-  number: number;
+  number: string;
   email: string;
   createdAt: string;
   updatedAt: string;
